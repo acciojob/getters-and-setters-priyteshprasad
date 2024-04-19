@@ -4,13 +4,7 @@ class Person {
 		this.name = name;
 		this.age =age;
 	}
-	get name(){
-		return this.name;
-	}
-
-	set age(age){
-		this.age = age;
-	}
+	
 }
 
 class Student extends Person {
@@ -32,17 +26,21 @@ class Teacher extends Person {
 		console.log(this.name+" is teaching")
 	}
 }
-const person = new Person("John", 25);
-console.log(person.name); // Output: John
+// const person = new Person("John", 25);
+// console.log(person.name); // Output: John
 
-person.age = 30;
-console.log(person.age); // Output: 30
+// person.age = 30;
+// console.log(person.age); // Output: 30
 
-const student = new Student("Alice", 22);
-student.study(); // Output: Alice is studying
+// const student = new Student("Alice", 22);
+// student.study(); // Output: Alice is studying
 
-const teacher = new Teacher("Bob", 40);
-teacher.teach(); // Output: Bob is teaching
+// const teacher = new Teacher("Bob", 40);
+// teacher.teach(); // Output: Bob is teaching
+
+// console.log(student.name)
+// student.age = 13
+// console.log(student.age)
 
 // Do not change the code below this line
 window.Person = Person;
